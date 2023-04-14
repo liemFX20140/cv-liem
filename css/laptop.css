@@ -1,0 +1,50 @@
+/* background gray */
+
+.bg-grey {
+  background-color: #f1f3f5;
+  /* width: 100%; */
+}
+
+/* SKill POINT */
+.card-content span {
+  background: #c7c7c7;
+  display: inline-block;
+  height: 2px;
+  margin-right: 7px;
+  width: 35px;
+  transform: translate(0, -600%);
+}
+
+#point {
+  background: #3bc9db;
+}
+
+.card-content p {
+  margin-bottom: 3px;
+}
+
+/* Now hightlight */
+.now::after {
+  content: "Hiện tại";
+  background-color: #3bc9db;
+  padding: 5px 8px;
+  border-radius: 9px;
+  color: #fff;
+  font-style: italic;
+  margin-left: 2px;
+}
+
+/* PROJECT */
+
+#project button:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer a {
+  width: 4%;
+  margin: 10px 15px;
+}
+footer a:hover {
+  transform: scale(1.3);
+}

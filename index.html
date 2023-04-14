@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <title>Assiment 3</title>
+  </head>
+  <body>
+    <!-- Em làm lại toàn bộ theo boostrap để làm quen chứ ko xài kế thừa từ asm2 -->
+    <header class="banner p-3">
+      <div
+        class="bg-image img-fluid position-relative"
+        style="
+          background-image: url(css/banner.jpg);
+          background-size: cover;
+          height: 500px;
+          background-position: center;
+        "
+      ></div>
+      <!-- boostrap ko hỗ trợ translate -->
+      <div
+        class="text-light position-absolute top-50 start-50 d-flex flex-column align-items-center vw-100"
+        style="transform: translate(-50%, -150%)"
+      >
+        <h1>Phạm Thanh Liêm</h1>
+        <p>Full-stack developer</p>
+      </div>
+    </header>
+    <!-- Phần article -->
+    <article>
+      <!-- Phần navbar -->
+      <ul
+        class="nav justify-content-center px-5 d-flex flex-lg-row flex-md-row flex-sm-row flex-column"
+        style="gap: 10px"
+      >
+        <li class="nav-item d-flex align-items-start">
+          <a class="nav-link px-1 text-dark" href="#about">Thông tin</a>
+          <i class="icon-user-1 py-2"></i>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link px-1 text-dark" href="#">Lý Lịch</a>
+          <i class="icon-newspaper-1 py-2"></i>
+        </li>
+        <li class="nav-item d-none d-lg-block d-xl-block">
+          <img
+            src="images/avatar.png"
+            alt="Avatar"
+            class="rounded-circle"
+            height="250px"
+            style="transform: translate(0%, -50%); border: 7px solid #fff"
+          />
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link px-1 text-dark" href="#certificate">Chứng chỉ</a>
+          <i class="icon-certificate-2 py-2"></i>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link px-1 text-dark" href="#project">Dự án</a>
+          <i class="icon-star-1 py-2"></i>
+        </li>
+      </ul>
+      <!-- TARGET - ABOUT -->
+      <!-- 2 conlumns lg -->
+      <section>
+        <div class="container p-3">
+          <div class="row">
+            <div class="col-md p-2 bg-light">
+              <h3 class="section-title" id="target">Mục tiêu nghề nghiệp</h3>
+              <p>
+                Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+                Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+                <strong>Fullstack Developer</strong>, được làm việc trong môi
+                trường chuyên nghiệp để có thể không ngừng học hỏi, tích lũy
+                kinh nghiệm cũng như rèn luyện kỹ năng cần thiết.
+              </p>
+            </div>
+            <div class="col-md p-2 about">
+              <h3 class="section-title" id="about">Thông tin cá nhân</h3>
+              <ul class="mt-40 info">
+                <li><span>Giới tính</span> : Nam</li>
+                <li><span>Ngày sinh</span> : 31/05/1992</li>
+                <li><span>Điện thoại</span> : (+84) 986219238</li>
+                <li><span>Email</span> : liemptfx20140@funix.edu.vn</li>
+                <li>
+                  <span>Địa chỉ</span> : Số 17 Mạc Đĩnh Chi, thành phố Lào Cai,
+                  tỉnh Lào Cai
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- JOB-EXP 3colum lg ; 2 columns md ;  1 colum xs+sm-->
+      <section>
+        <div class="container py-5">
+          <div class="row">
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 bg-grey border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-3 justify-content-between">
+                <h1>Kinh nghiệm</h1>
+                <i class="ic-toolbox p-2"></i>
+              </div>
+              <div class="card-content">
+                <p><strong>Full Stack Developer </strong></p>
+                <p class="now">05/2022 -</p>
+                <ul>
+                  <li>
+                    Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
+                    có.
+                  </li>
+                  <li>
+                    Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
+                    (MySQL, SQLServer, NoSQL, …) và viết được các câu truy vấn.
+                  </li>
+                  <li>
+                    Sử dụng ngôn ngữ serverside (Python, Java, …) để xây dựng
+                    các Web Serv
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-3 justify-content-between">
+                <h1>Kỹ năng</h1>
+                <i class="ic-tools-2"></i>
+              </div>
+              <div class="card-content">
+                <p>HTML/CSS: Fundamental</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <p>Javascrip: Intermediate</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <p>Node JS: Intermediate</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <p>React JS: Intermediate</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <p>Kotlin: Fundamental</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <p>Matlab: Fundamental</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 bg-grey border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-3 justify-content-between">
+                <h1>English</h1>
+                <i class="icon-language"></i>
+              </div>
+              <div class="card-content">
+                <p>Nghe: 4/5</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <p>Nói: 3/5</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <p>Đọc: 4/5</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <p>Viết: 2/5</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-2 justify-content-between">
+                <h1>Hoạt động</h1>
+                <i class="ic-toolbox"></i>
+              </div>
+              <div class="card-content" style="margin-top: 10px"></div>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 bg-grey border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-3 justify-content-between">
+                <h1>Học vấn</h1>
+                <i class="icon-pencil-7" style="font-size: 40px"></i>
+              </div>
+              <div class="card-content" style="margin-top: 10px">
+                <strong>FuniX </strong> <br />
+                <em>11/2022 - 3/2023</em>
+                <p>Tốt nghiệp chứng chỉ doanh nghiệp nhóm full-stack</p>
+                <p>GPA: 8.0/10</p>
+              </div>
+              <div class="card-content" style="margin-top: 10px">
+                <strong>Đại học Dược Hà Nội HUP </strong><br />
+                <em>8/2010 - 6/2015</em>
+                <p>GPA: 6.7/10</p>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
+            >
+              <div class="job-card-header d-flex p-3 justify-content-between">
+                <h1>Sở thích</h1>
+                <i class="ic-telescope"></i>
+              </div>
+              <div
+                class="card-content hobby d-flex justify-content-between p-3"
+              >
+                <div>
+                  <i class="icon-gamepad"></i>
+                  <p>Gaming</p>
+                </div>
+                <div>
+                  <i class="icon-book"></i>
+                  <p>Reading</p>
+                </div>
+                <div>
+                  <i class="icon-headphones"></i>
+                  <p>Music</p>
+                </div>
+                <div>
+                  <i class="icon-soccer-ball"></i>
+                  <p>Football</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CERTIFICATE -->
+      <section id="certificate">
+        <div class="container">
+          <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+          <div class="row">
+            <div class="col-md-12 col-lg-6"></div>
+            <div class="col-md-12 col-lg-6"></div>
+            <div class="col-md-12 col-lg-6"></div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECT -->
+      <section id="project">
+        <div class="container">
+          <h1 class="section-title py-5">Dự án</h1>
+          <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <div class="project-detail">
+                <img src="css\project_1.png" class="img-fluid" />
+                <div class="h5">CV cá nhân</div>
+                <div class="project-role">
+                  <i class="icon-user-1">FUNiX</i>
+                  <i class="icon-lamp">Deverloper</i>
+                </div>
+                <table class="table table-border table-sm">
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang web CV cá nhân online. Gồm các thông tin cá nhân
+                      cũng như kỹ năng nghề nghiệp
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>HTML, CSS</td>
+                  </tr>
+                </table>
+                <a href="/projects/project-1.html">
+                  <button class="card-link btn btn-info">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <div class="project-detail">
+                <img
+                  src="images/mobile-shop.png"
+                  class="img-fluid border-2 border-info"
+                />
+                <div class="h5">Trang thương mại điện tử</div>
+                <div class="project-role">
+                  <i class="icon-user-1">FUNiX</i>
+                  <i class="icon-lamp">Deverloper</i>
+                </div>
+                <table class="table table-border table-sm">
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang web thương mại điện tử với giao diện shop cho người
+                      dùng và giao diện admin dashboard cho người quản lý. Sử
+                      dụng mongo để lưu trữ thông tin khác hàng, giỏ hàng, đơn
+                      đặt hàng...
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>ReactJS, NodeJS</td>
+                  </tr>
+                </table>
+                <a
+                  href="https://mobile-shop-client.netlify.app/"
+                  target="_blank"
+                >
+                  <button class="card-link btn btn-info">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <div class="project-detail">
+                <img src="images/booking.png" class="img-fluid" />
+                <div class="h5">Trang web booking</div>
+                <div class="project-role">
+                  <i class="icon-user-1">FUNiX</i>
+                  <i class="icon-lamp">Deverloper</i>
+                </div>
+                <table class="table table-border table-sm">
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang web mô phỏng trang booking.com. Cung cấp giao diện
+                      người dùng với tính năng tìm kiếm khách sạn, xem chi tiết
+                      và đặt phòng... Cung cấp giao diện quản lý admin dashboard
+                      với tính thăng thêm/xóa/sửa khách sạn, phòng và theo dõi
+                      giao dịch.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>Node Js, ReactJS</td>
+                  </tr>
+                </table>
+
+                <a href="https://booking-liem.netlify.app/" target="_blank">
+                  <button class="card-link btn btn-info">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="py-5">
+      <div class="container bg-grey">
+        <h1 class="section-title py-2">Liên hệ</h1>
+        <div class="icon d-flex justify-content-center">
+          <a href="https://www.facebook.com/pham.liem.5220">
+            <img
+              src="logo\Facebook_Logo_(2019).png"
+              class="img-fluid"
+              alt="logo facebook"
+            />
+          </a>
+
+          <a href="https://leetcode.com/liemhup/">
+            <img src="logo\LeetCode_logo_black.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
