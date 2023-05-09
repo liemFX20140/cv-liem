@@ -45,11 +45,15 @@
         style="gap: 10px"
       >
         <li class="nav-item d-flex align-items-start">
-          <a class="nav-link px-1 text-dark" href="#about">Thông tin</a>
+          <a class="nav-link px-1 text-dark vie" href="#about">Thông tin</a>
+          <a class="nav-link px-1 text-dark eng hidden" href="#about"
+            >Personal infomation</a
+          >
           <i class="icon-user-1 py-2"></i>
         </li>
         <li class="nav-item d-flex">
-          <a class="nav-link px-1 text-dark" href="#">Lý Lịch</a>
+          <a class="nav-link px-1 text-dark vie" href="#">Lý Lịch</a>
+          <a class="nav-link px-1 text-dark eng hidden" href="#">About</a>
           <i class="icon-newspaper-1 py-2"></i>
         </li>
         <li class="nav-item d-none d-lg-block d-xl-block">
@@ -62,12 +66,26 @@
           />
         </li>
         <li class="nav-item d-flex">
-          <a class="nav-link px-1 text-dark" href="#certificate">Chứng chỉ</a>
+          <a class="nav-link px-1 text-dark vie" href="#certificate"
+            >Chứng chỉ</a
+          ><a class="nav-link px-1 text-dark eng hidden" href="#certificate">
+            Certificate</a
+          >
           <i class="icon-certificate-2 py-2"></i>
         </li>
         <li class="nav-item d-flex">
-          <a class="nav-link px-1 text-dark" href="#project">Dự án</a>
+          <a class="nav-link px-1 text-dark vie" href="#project"> Dự án</a>
+          <a class="nav-link px-1 text-dark eng hidden" href="#project">
+            Project</a
+          >
           <i class="icon-star-1 py-2"></i>
+        </li>
+        <li class="nav-item d-flex">
+          <p for="lang" class="mt-1 p-1">Language</p>
+          <select id="lang" name="language" class="mt-2">
+            <option value="vie">VIE</option>
+            <option value="eng">ENG</option>
+          </select>
         </li>
       </ul>
       <!-- TARGET - ABOUT -->
@@ -76,25 +94,47 @@
         <div class="container p-3">
           <div class="row">
             <div class="col-md p-2 bg-light">
-              <h3 class="section-title" id="target">Mục tiêu nghề nghiệp</h3>
-              <p>
+              <h3 class="section-title vie" id="target">
+                Mục tiêu nghề nghiệp
+              </h3>
+              <h3 class="section-title eng hidden" id="target">Job Target</h3>
+              <p class="vie">
                 Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
                 Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
                 <strong>Fullstack Developer</strong>, được làm việc trong môi
                 trường chuyên nghiệp để có thể không ngừng học hỏi, tích lũy
                 kinh nghiệm cũng như rèn luyện kỹ năng cần thiết.
               </p>
+              <p class="eng hidden">
+                As a student who has completed a FUNix Business certificate
+                program . I hope to work with the position
+                <strong>Fullstack Developer</strong>, working in an environment
+                professional environment to be able to constantly learn and
+                accumulate experience as well as practice the necessary skills.
+              </p>
             </div>
             <div class="col-md p-2 about">
-              <h3 class="section-title" id="about">Thông tin cá nhân</h3>
+              <h3 class="section-title vie" id="about">Thông tin cá nhân</h3>
+              <h3 class="section-title eng hidden" id="about">
+                Personal infomation
+              </h3>
               <ul class="mt-40 info">
-                <li><span>Giới tính</span> : Nam</li>
-                <li><span>Ngày sinh</span> : 31/05/1992</li>
-                <li><span>Điện thoại</span> : (+84) 986219238</li>
+                <li class="vie"><span>Giới tính</span> : Nam</li>
+                <li class="eng hidden"><span>Sex</span> : Female</li>
+                <li class="vie"><span>Ngày sinh</span> : 31/05/1992</li>
+                <li class="eng hidden">
+                  <span>Date of birth</span> : 31/05/1992
+                </li>
+                <li class="vie"><span>Điện thoại</span> : (+84) 986219238</li>
+                <li><span>Phone</span> : (+84) 986219238</li>
                 <li><span>Email</span> : liemptfx20140@funix.edu.vn</li>
                 <li>
                   <span>Địa chỉ</span> : Số 17 Mạc Đĩnh Chi, thành phố Lào Cai,
                   tỉnh Lào Cai
+                </li>
+                <li>
+                  <span>Address </span> : 17 Mac Đinh Chi, Lao Cai city, Lào Cai
+                  provine, Viet Nam
                 </li>
               </ul>
             </div>
@@ -109,24 +149,35 @@
               class="col-xs-12 col-md-6 col-lg-4 bg-grey border-bottom border-secondary border-2"
             >
               <div class="job-card-header d-flex p-3 justify-content-between">
-                <h1>Kinh nghiệm</h1>
+                <h1 class="vie">Kinh nghiệm</h1>
+                <h1 class="eng hidden">Experience</h1>
                 <i class="ic-toolbox p-2"></i>
               </div>
               <div class="card-content">
                 <p><strong>Full Stack Developer </strong></p>
                 <p class="now">05/2022 -</p>
                 <ul>
-                  <li>
+                  <li class="vie">
                     Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
                     có.
                   </li>
-                  <li>
+                  <li class="eng hidden">
+                    Build and develop Website based on design and requirements
+                  </li>
+                  <li class="vie">
                     Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
                     (MySQL, SQLServer, NoSQL, …) và viết được các câu truy vấn.
                   </li>
-                  <li>
-                    Sử dụng ngôn ngữ serverside (Python, Java, …) để xây dựng
-                    các Web Serv
+                  <li class="eng hidden">
+                    Database analysis and design, using database management
+                    systems (MySQL, SQLServer, NoSQL, ...).
+                  </li>
+                  <li class="vie">
+                    Sử dụng ngôn ngữ serverside (NodeJS) để xây dựng các Web
+                    Server
+                  </li>
+                  <li class="eng hidden">
+                    Use server side language (NodeJS) to build Web Servers
                   </li>
                 </ul>
               </div>
@@ -136,7 +187,8 @@
               class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
             >
               <div class="job-card-header d-flex p-3 justify-content-between">
-                <h1>Kỹ năng</h1>
+                <h1 class="vie">Kỹ năng</h1>
+                <h1 class="eng hidden">Skill</h1>
                 <i class="ic-tools-2"></i>
               </div>
               <div class="card-content">
@@ -174,25 +226,29 @@
                 <i class="icon-language"></i>
               </div>
               <div class="card-content">
-                <p>Nghe: 4/5</p>
+                <p class="vie">Nghe: 4/5</p>
+                <p class="eng hidden">Listening: 4/5</p>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
-                <p>Nói: 3/5</p>
+                <p class="vie">Nói: 3/5</p>
+                <p class="eng hidden">Speaking: 3/5</p>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
                 <span class="skill-point"></span>
-                <p>Đọc: 4/5</p>
+                <p class="vie">Đọc: 4/5</p>
+                <p class="eng hidden">Reading: 4/5</p>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
-                <p>Viết: 2/5</p>
+                <p class="vie">Viết: 2/5</p>
+                <p class="eng hidden">Writng: 2/5</p>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
@@ -204,7 +260,8 @@
               class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
             >
               <div class="job-card-header d-flex p-2 justify-content-between">
-                <h1>Hoạt động</h1>
+                <h1 class="vie">Hoạt động</h1>
+                <h1 class="eng hidden">Activity</h1>
                 <i class="ic-toolbox"></i>
               </div>
               <div class="card-content" style="margin-top: 10px"></div>
@@ -213,17 +270,27 @@
               class="col-xs-12 col-md-6 col-lg-4 bg-grey border-bottom border-secondary border-2"
             >
               <div class="job-card-header d-flex p-3 justify-content-between">
-                <h1>Học vấn</h1>
+                <h1 class="vie">Học vấn</h1>
+                <h1 class="eng hidden">Educational background</h1>
                 <i class="icon-pencil-7" style="font-size: 40px"></i>
               </div>
               <div class="card-content" style="margin-top: 10px">
                 <strong>FuniX </strong> <br />
                 <em>11/2022 - 3/2023</em>
-                <p>Tốt nghiệp chứng chỉ doanh nghiệp nhóm full-stack</p>
+                <p class="eng hidden">
+                  Graduated with a full-stack develop group enterprise
+                  certificate
+                </p>
+                <p class="vie">
+                  Tốt nghiệp chứng chỉ doanh nghiệp nhóm full-stack
+                </p>
                 <p>GPA: 8.0/10</p>
               </div>
               <div class="card-content" style="margin-top: 10px">
-                <strong>Đại học Dược Hà Nội HUP </strong><br />
+                <strong class="vie">Đại học Dược Hà Nội HUP </strong><br />
+                <strong class="eng hidden"
+                  >Ha Noi uiniversity of Pharmacy </strong
+                ><br />
                 <em>8/2010 - 6/2015</em>
                 <p>GPA: 6.7/10</p>
               </div>
@@ -232,7 +299,8 @@
               class="col-xs-12 col-md-6 col-lg-4 border-bottom border-secondary border-2"
             >
               <div class="job-card-header d-flex p-3 justify-content-between">
-                <h1>Sở thích</h1>
+                <h1 class="vie">Sở thích</h1>
+                <h1 class="eng hidden">Hobbies</h1>
                 <i class="ic-telescope"></i>
               </div>
               <div
@@ -262,7 +330,8 @@
       <!-- CERTIFICATE -->
       <section id="certificate">
         <div class="container">
-          <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+          <h1 class="section-title vie">Chứng chỉ - Giải thưởng</h1>
+          <h1 class="section-title eng hidden">Certificate</h1>
           <div class="row">
             <div class="col-md-12 col-lg-6"></div>
             <div class="col-md-12 col-lg-6"></div>
@@ -273,37 +342,50 @@
       <!-- PROJECT -->
       <section id="project">
         <div class="container">
-          <h1 class="section-title py-5">Dự án</h1>
+          <h1 class="section-title py-5 vie">Dự án</h1>
+          <h1 class="section-title py-5 eng hidden">Projects</h1>
           <div class="row">
             <div class="col-xs-12 col-md-4 col-lg-4">
               <div class="project-detail">
                 <img src="css\project_1.png" class="img-fluid" />
-                <div class="h5">CV cá nhân</div>
+                <div class="h5">Personal Web CV</div>
                 <div class="project-role">
                   <i class="icon-user-1">FUNiX</i>
                   <i class="icon-lamp">Deverloper</i>
                 </div>
                 <table class="table table-border table-sm">
                   <tr>
-                    <th>Mô tả</th>
-                    <td>
+                    <th class="vie">Mô tả</th>
+                    <th class="eng hidden">Details</th>
+                    <td class="vie">
                       Trang web CV cá nhân online. Gồm các thông tin cá nhân
                       cũng như kỹ năng nghề nghiệp
                     </td>
-                  </tr>
-                  <tr>
-                    <th>Nhiệm vụ</th>
-                    <td>
-                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    <td class="eng hidden">
+                      Personal web CV. Information about educate and skill
                     </td>
                   </tr>
                   <tr>
-                    <th>Công nghệ</th>
+                    <th class="vie">Nhiệm vụ</th>
+                    <th class="eng hidden">Role</th>
+                    <td class="vie">
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                    <td class="eng hidden">
+                      Build - Review - Optimization - Debug
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="vie">Công nghệ</th>
+                    <th class="eng hidden">Framework</th>
                     <td>HTML, CSS</td>
                   </tr>
                 </table>
                 <a href="/projects/project-1.html">
-                  <button class="card-link btn btn-info">Chi tiết</button>
+                  <button class="card-link btn btn-info vie">Chi tiết</button
+                  ><button class="card-link btn btn-info eng hidden">
+                    Detail
+                  </button>
                 </a>
               </div>
             </div>
@@ -313,29 +395,41 @@
                   src="images/mobile-shop.png"
                   class="img-fluid border-2 border-info"
                 />
-                <div class="h5">Trang thương mại điện tử</div>
+                <div class="h5 vie">Trang thương mại điện tử</div>
+                <div class="h5 eng hidden">eCommerce website</div>
                 <div class="project-role">
                   <i class="icon-user-1">FUNiX</i>
                   <i class="icon-lamp">Deverloper</i>
                 </div>
                 <table class="table table-border table-sm">
                   <tr>
-                    <th>Mô tả</th>
-                    <td>
+                    <th class="vie">Mô tả</th>
+                    <th class="eng hidden">Details</th>
+                    <td class="vie">
                       Trang web thương mại điện tử với giao diện shop cho người
                       dùng và giao diện admin dashboard cho người quản lý. Sử
                       dụng mongo để lưu trữ thông tin khác hàng, giỏ hàng, đơn
                       đặt hàng...
                     </td>
-                  </tr>
-                  <tr>
-                    <th>Nhiệm vụ</th>
-                    <td>
-                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    <td class="eng hidden">
+                      eCommerce website with admin and client pages. Using
+                      mongoDb to store data about customers, carts,
+                      orders,transactions...
                     </td>
                   </tr>
                   <tr>
-                    <th>Công nghệ</th>
+                    <th class="vie">Nhiệm vụ</th>
+                    <th class="eng hidden">Role</th>
+                    <td class="vie">
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                    <td class="eng hidden">
+                      Build - Review - Optimization - Debug
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="vie">Công nghệ</th>
+                    <th class="eng hidden">Framework</th>
                     <td>ReactJS, NodeJS</td>
                   </tr>
                 </table>
@@ -343,43 +437,62 @@
                   href="https://mobile-shop-client.netlify.app/"
                   target="_blank"
                 >
-                  <button class="card-link btn btn-info">Chi tiết</button>
+                  <button class="card-link btn btn-info vie">Chi tiết</button
+                  ><button class="card-link btn btn-info eng hidden">
+                    Details
+                  </button>
                 </a>
               </div>
             </div>
             <div class="col-xs-12 col-md-4 col-lg-4">
               <div class="project-detail">
                 <img src="images/booking.png" class="img-fluid" />
-                <div class="h5">Trang web booking</div>
+                <div class="h5 vie">Trang web booking</div>
+                <div class="h5 eng hidden">Booking.com</div>
                 <div class="project-role">
                   <i class="icon-user-1">FUNiX</i>
                   <i class="icon-lamp">Deverloper</i>
                 </div>
                 <table class="table table-border table-sm">
                   <tr>
-                    <th>Mô tả</th>
-                    <td>
+                    <th class="vie">Mô tả</th>
+                    <th class="eng hidden">Detail</th>
+                    <td class="vie">
                       Trang web mô phỏng trang booking.com. Cung cấp giao diện
                       người dùng với tính năng tìm kiếm khách sạn, xem chi tiết
                       và đặt phòng... Cung cấp giao diện quản lý admin dashboard
                       với tính thăng thêm/xóa/sửa khách sạn, phòng và theo dõi
                       giao dịch.
                     </td>
-                  </tr>
-                  <tr>
-                    <th>Nhiệm vụ</th>
-                    <td>
-                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    <td class="eng hidden">
+                      Booking.com website. Provide client pages to search, view
+                      detail and order hotel, rooms. Provide admin page to
+                      add/del/upadte/remove rooms, hotel and dashboard control.
                     </td>
                   </tr>
                   <tr>
-                    <th>Công nghệ</th>
+                    <th class="vie">Nhiệm vụ</th>
+                    <th class="eng hidden">Role</th>
+                    <td class="vie">
+                      Phát triển code- Review code- Tối ưu code- xử lý lỗi
+                    </td>
+                    <td class="eng hidden">
+                      Build - Review - Optimization - Debug
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="vie">Công nghệ</th>
+                    <th class="eng hidden">Framework</th>
                     <td>Node Js, ReactJS</td>
                   </tr>
                 </table>
 
                 <a href="https://booking-liem.netlify.app/" target="_blank">
-                  <button class="card-link btn btn-info">Chi tiết</button>
+                  <button class="card-link btn btn-info vie">Chi tiết</button
+                  ><button class="card-link btn btn-info eng hidden">
+                    Chi tiết
+                  </button>
                 </a>
               </div>
             </div>
@@ -389,7 +502,8 @@
     </article>
     <footer class="py-5">
       <div class="container bg-grey">
-        <h1 class="section-title py-2">Liên hệ</h1>
+        <h1 class="section-title py-2 vie">Liên hệ</h1>
+        <h1 class="section-title py-2 eng hidden">Contact</h1>
         <div class="icon d-flex justify-content-center">
           <a href="https://www.facebook.com/pham.liem.5220">
             <img
@@ -405,5 +519,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

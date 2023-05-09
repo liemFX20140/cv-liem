@@ -1,5 +1,13 @@
 /* background gray */
 
+.hidden {
+  display: none;
+}
+
+select {
+  height: 1.5rem;
+}
+
 .bg-grey {
   background-color: #f1f3f5;
   /* width: 100%; */
@@ -25,7 +33,7 @@
 
 /* Now hightlight */
 .now::after {
-  content: "Hiện tại";
+  content: 'Hiện tại';
   background-color: #3bc9db;
   padding: 5px 8px;
   border-radius: 9px;
