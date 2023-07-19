@@ -17,21 +17,20 @@
     <title>Phạm Thanh Liêm - full-stack deverloper</title>
   </head>
   <body>
-    <!-- Em làm lại toàn bộ theo boostrap để làm quen chứ ko xài kế thừa từ asm2 -->
     <header class="banner p-3">
       <div
         class="bg-image img-fluid position-relative"
         style="
-          background-image: url(css/banner.jpg);
+          background-image: url(css/banner1.jpg);
           background-size: cover;
-          height: 500px;
+          height: 400px;
           background-position: center;
         "
       ></div>
       <!-- boostrap ko hỗ trợ translate -->
       <div
-        class="text-light position-absolute top-50 start-50 d-flex flex-column align-items-center vw-100"
-        style="transform: translate(-50%, -150%)"
+        class="text-light position-absolute top-xl-150 start-50 d-flex flex-column align-items-center vw-100"
+        style="transform: translate(-50%, -250%)"
       >
         <h1>Phạm Thanh Liêm</h1>
         <p>Full-stack developer</p>
@@ -80,13 +79,13 @@
           >
           <i class="icon-star-1 py-2"></i>
         </li>
-        <li class="nav-item d-flex">
+        <div class="nav-item d-flex">
           <p for="lang" class="mt-1 p-1">Language</p>
           <select id="lang" name="language" class="mt-2">
             <option value="vie">VIE</option>
             <option value="eng">ENG</option>
           </select>
-        </li>
+        </div>
       </ul>
       <!-- TARGET - ABOUT -->
       <!-- 2 conlumns lg -->
@@ -100,14 +99,33 @@
               <h3 class="section-title eng hidden" id="target">Job Target</h3>
               <p class="vie">
                 Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
-                Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+                Nghiệp của FUNiX. Với khả năng tiếng anh có thể đọc hiểu tài
+                liệu cùng với khả năng tự học và tư duy logic, tôi tự tin có thể
+                nhanh chóng thích nghi với công việc. So với front-end thì tôi
+                nghiêng về phía back-end nhiều hơn.
+              </p>
+              <p class="vie">
+                Mục tiêu năm 2024 sẽ trở thành junior trong lĩnh vực lập trình
+                và phát triển website.
+              </p>
+              <p class="vie">
+                Tôi mong muốn mình sẽ được làm việc với vị trí
                 <strong>Fullstack Developer</strong>, được làm việc trong môi
                 trường chuyên nghiệp để có thể không ngừng học hỏi, tích lũy
                 kinh nghiệm cũng như rèn luyện kỹ năng cần thiết.
               </p>
               <p class="eng hidden">
                 As a student who has completed a FUNix Business certificate
-                program . I hope to work with the position
+                program .
+              </p>
+              <p class="eng hidden">
+                With the ability to read and understand documents in English
+                along with the ability to self-study and logical thinking, I am
+                confident that I can quickly adapt to the job. Compared to the
+                front-end, I lean more towards the back-end.
+              </p>
+              <p class="eng hidden">
+                I hope to work with the position
                 <strong>Fullstack Developer</strong>, working in an environment
                 professional environment to be able to constantly learn and
                 accumulate experience as well as practice the necessary skills.
@@ -196,15 +214,23 @@
                 <i class="ic-tools-2"></i>
               </div>
               <div class="card-content">
-                <p>HTML/CSS: Fundamental</p>
+                <p>HTML/CSS: Intermediate</p>
                 <span class="skill-point" id="point"></span>
-                <span class="skill-point"></span>
-                <span class="skill-point"></span>
-                <p>Javascrip: Intermediate</p>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
-                <p>Node JS: Intermediate</p>
+                <p>Javascript: Intermediate</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <p>TypeScript: Intermediate</p>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point" id="point"></span>
+                <span class="skill-point"></span>
+                <span class="skill-point"></span>
+                <p>Node JS: Proficient</p>
+                <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
@@ -212,11 +238,14 @@
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
-                <p>Kotlin: Fundamental</p>
+                <span class="skill-point"></span>
+                <p>NextJs: Fundamental</p>
+                <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
                 <span class="skill-point"></span>
-                <p>Matlab: Fundamental</p>
+                <p>Docker: Fundamental</p>
+                <span class="skill-point" id="point"></span>
                 <span class="skill-point" id="point"></span>
                 <span class="skill-point"></span>
                 <span class="skill-point"></span>
@@ -337,9 +366,7 @@
           <h1 class="section-title vie">Chứng chỉ - Giải thưởng</h1>
           <h1 class="section-title eng hidden">Certificate</h1>
           <div class="row">
-            <div class="col-md-12 col-lg-6"></div>
-            <div class="col-md-12 col-lg-6"></div>
-            <div class="col-md-12 col-lg-6"></div>
+            <img src="css/certi.jpg" />
           </div>
         </div>
       </section>
@@ -383,6 +410,11 @@
                     <th class="vie">Công nghệ</th>
                     <th class="eng hidden">Framework</th>
                     <td>HTML, CSS</td>
+                  </tr>
+                  <tr>
+                    <th class="vie">GitHub</th>
+
+                    <td><a href="">Git repo</a></td>
                   </tr>
                 </table>
                 <a href="/projects/project-1.html">
